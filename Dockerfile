@@ -3,14 +3,8 @@
 FROM circleci/node:latest
 LABEL maintainer="yoan@ytotech.com"
 
-# Add Ruby.
-# TODO Do we need ruby-full?
+# Add Canvas dependencies.
 RUN sudo apt-get update \
 	&& sudo apt-get install -y \
-		ruby ruby-dev \
+		libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++ \
 	&& sudo rm -rf /var/lib/apt/lists/*
-
-# Install Bundler.
-RUN sudo gem install bundler
-
-# Also pre-install Sass?
