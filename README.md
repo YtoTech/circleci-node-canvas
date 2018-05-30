@@ -1,6 +1,6 @@
 # A Node Docker image for CircleCI with Canvas support
 
-A Docker Node image, with [canvas](https://github.com/Automattic/node-canvas) support.
+A [Docker Node image](https://hub.docker.com/r/yoant/circleci-node-canvas/), with [canvas](https://github.com/Automattic/node-canvas) support.
 
 Intended to run tests relying on the canvas module.
 
